@@ -11,3 +11,4 @@ then we use
 # C_plus_plus-Codes
 This will be all C++ codes
 cout -> explaining the cout functionality
+CS110_Lab3 -> ex1_readdata.cpp
