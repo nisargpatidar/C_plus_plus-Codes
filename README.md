@@ -12,3 +12,4 @@ then we use
 This will be all C++ codes
 cout -> explaining the cout functionality
 CS110_Lab3 -> ex1_readdata.cpp
+CS110_Lab3 -> ex2_format_io.cpp
