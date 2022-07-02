@@ -9,7 +9,7 @@ then we use
 
 
 # C_plus_plus-Codes
-This will be all C++ codes\n
-cout -> explaining the cout functionality\n
-CS110_Lab3 -> ex1_readdata.cpp\n
-CS110_Lab3 -> ex2_format_io.cpp\n
+This will be all C++ codes
+cout -> explaining the cout functionality
+CS110_Lab3 -> ex1_readdata.cpp
+CS110_Lab3 -> ex2_format_io.cpp
