@@ -1,0 +1,71 @@
+/*************************************************
+ * This is a copy of my code for the lab exercise in UOfR for CS110 class
+ * Student Name: Nisarg
+ * Assignment Number: CS 110 Lab 3 exercise 1
+ * Program Name: readdata.cpp
+ * Last Modified: July 2nd, 2022
+ *
+ * ------ Problem Statement -----
+ * This exercise is designed for you to practice effective
+ * and clear Prompt/Read interactions. Make sure the user
+ * knows what to enter - including expected data type and
+ * units.
+ * 
+ * ------ Input and Output ------
+ * Input: 
+ *  - The integer length and width of a piece of glass in inches
+ *  - The price of glass per square foot
+ * Output: 
+ *  - Nicely formatted feedback echoing the inputs
+ *  - A correct final price for the given inputs
+ * 
+ * REFER TO SAMPLE CODING TEMPLATE OR YOUR PROFESSOR'S REQUIREMENTS
+ * FOR MORE.
+ *
+ * Add short comments in the code to explain each change you make.
+ *************************************************/
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+const int inchesInSqFt = 144;
+
+int main()
+{
+  int length;  // measured in inches
+  int width;   // measured in inches
+  float price; // sold by square foot
+  float cost;
+
+  /*********************************************************************  
+   *   To complete the program, replace this comment with code that
+   *   prompts the user and reads input data for the three variables:
+   *      length, width, and price.
+   *********************************************************************/
+
+
+  //Just taking the value from the user and storing it in the variable length, width and price
+cout << "Please enter the value of width: " << endl;
+cin >> width;
+cout << "Please enter the value of length: " << endl;
+cin >> length;
+cout << "Please enter the value of price: " << endl;
+cin >> price;
+  // Feedback
+  cout << fixed;
+  cout << "Width:  " << setw(6) << width << " in." << endl
+       << "Length: " << setw(6) << length << " in. " << endl
+       << "Price: $" << setw(6) << setprecision(2) << price
+       << " per Sq. Ft." << endl;
+
+  // Results
+  //initially it was this equation: cost = ((width * length) / inchesInSqFt) * price;
+  //then we change it to 
+  cost = ((width * length) / (float)inchesInSqFt) * price;
+
+  //because when it divide it get the answer in integer and not in float value so we can either change the order so that the the division is done at the very end or we can try using type casting
+  cout << "The cost of the glass is $" << setw(6) << cost << endl;
+
+  return 0;
+}
