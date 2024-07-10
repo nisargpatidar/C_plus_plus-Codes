@@ -9,7 +9,6 @@ int main()
     int arrayInt[3][3];
     int playerMove = 1;
     CreateBoard(arrayInt);
-    
     for(int i = 0; i < 9; i++)
     {   
         playerMove = TakeInput(arrayInt, playerMove);
@@ -19,6 +18,7 @@ int main()
         if(winner != 0)
         {
             cout << "Player " << winner << " is the winner. Thank you for playing this game!!" << endl;
+            system("Color 0A");
             break;
         }
     }
